@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin:5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: rgba(185, 63, 63, 0.938);
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/*  HEADER  */
+
+header{
+    background:url('img/cabecera_fondo.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+} 
+
+.nav{
+    display: flex;
+    align-items:center;   
+}
+
+.logo{
+    flex: 1 auto; 
+}
+
+.logo img{
+    width: 60px;
+}
+
+.nav-menu{
+    flex: 4 auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    font-size: 0.6em;
+    color: rgb(231, 52, 52);
+}
+
+.nav-menu a:hover{
+    border-bottom:1px solid black;
+}
+
+.social{
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+.social img{
+width: 40px;
+}
+
+.texto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto h1{
+    color: red;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/* EL CONTENIDO */
+
+.section{
+    display: flex;
+}
+
+.articles{
+    flex: 5 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article{
+    flex: 1 1 auto;
+    width: 45%;
+    justify-content: space-around;
+}
+.article:hover{
+    opacity: 0.8;
+}
+
+
+.fotojapon{
+    max-width: 100%;
+    vertical-align:top;
+    margin: 0;
+}
+.descripcion{
+    background-color:rgba(255, 255, 255, 0.603);
+    margin-top:-5px ;
+    color: black;
+}
+.descripcion p,
+.contenido-footer p{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+.articleL{
+    background-color: #90be6d;
+    flex: 4 1 100%;
+    //width: 100%;
+}
+
+
+
+/* ASIDE */
+
+
+aside{
+    background-color: #f3722c;
+    flex: 2 auto;
+}
+.aside-article{
+    width: 100px;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #4d908e;
+}
+
+.contenido-footer{
+    background-color: #f9c74f;
+}
+
+@media all and (max-width: 800px){
+    .section{
+        display: block;
+    }
+    
+}

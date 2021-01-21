@@ -1,0 +1,155 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* nombrar los elementos */
+
+.header{
+    grid-area:header;
+}
+.main-container{
+    grid-area:main;
+}
+
+.footer-container{
+    grid-area:footer;
+}
+.nav{
+    grid-area: nav;
+}
+
+
+/* HEADER */
+
+header{
+    background:url('img/cabecera_fondo.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding-bottom: 30px;
+} 
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgb(231, 52, 52);
+    margin-left: 30px;
+    line-height: 50px;
+}
+.nav-menu a:hover{
+    border-bottom: 1px solid black;
+}
+.texto h1{
+    color: red;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.nav img{
+    width: 50px;
+}
+
+/* MAIN */
+.fotojapon{
+    max-width: 100%;
+    vertical-align:top;
+    margin: 0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.article{
+    text-align: center;
+}
+.article img{
+    margin: 5px;
+}
+
+.article:hover{
+    opacity: 0.5;
+}
+
+
+
+
+/* articulos -- parte de abajo */
+.articleL{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(105, 132, 206);
+}
+.articleL ul li{
+    list-style: none;
+}
+
+/* ASIDE */
+
+.aside-container{
+    background-color: powderblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aside-article img{
+    width: 300px;
+    
+    }
+    .aside-article h3{
+        text-align: center;
+        color: rgb(4, 42, 158);
+    }
+    
+
+
+/* FOOTER */
+
+.contenido-footer{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(1, 71, 80);
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media all and (max-width: 800px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articles{
+        display: flex;
+        flex-direction: column;
+}
